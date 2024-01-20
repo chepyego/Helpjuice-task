@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
   end
 
   def search 
-    @articles = Article.where("title LIKE? "%" + params[:q] + "%" ")
+    @articles = Article.where("title LIKE ?", "%" + params[:query] + "%")
   end
 
   # GET /articles/1 or /articles/1.json

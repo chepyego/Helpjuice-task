@@ -1,0 +1,9 @@
+<h1 class="text-center text-2xl mb-4">all articles </h1>
+    <% if @article.nil? %>
+
+     <p><%= notice:"sorry article not found" %></p>
+
+    <% else %>
+    
+     <%= render @articles %>
+  <% end %>

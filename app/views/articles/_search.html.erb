@@ -1,5 +1,13 @@
-<form  class="  flex justify-center mt-4 mb-4">
- <input type="text" class=" relative " placeholder="search...">
 
- <button class="bg-blue-500 py-2 px-3  right-96 text-white">Search</button>
-</form>
+<div class="flex justify-center mt-10 mb-20">
+    <%=form_with url: "/search", method: :get do |form| %>
+        <%= form.label :query, "Search for:" %>
+        <%= form.text_field :query %>
+        
+        <%= form.submit "Search", class:"bg-blue-500 px-3 py-2" %>
+    <% end %>
+
+
+</div>
+
+  
