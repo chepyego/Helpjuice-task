@@ -1,0 +1,19 @@
+<div class="  w-full h-full">
+  <p style="color: green"><%= notice %></p>
+
+   <h1 class="text-4xl text-gray-900  text-center mx-auto ">Articles</h1></div>
+    <%= render 'search' %>
+
+  <div class=" mt-8 ml-40 " id="">
+    <% @articles.each do |article| %>
+      <%= render article %>
+      
+      
+    <% end %>
+  </div>
+
+  <button class=" text-white mt-4 ml-40 bg-blue-500 px-3 py-2 rounded-md "><%= link_to "New article", new_article_path %></button>
+
+
+
+</div>
