@@ -32,7 +32,7 @@ GitHub: https://github.com/chepyego/Helpjuice-task
 
 ### Production
 
-deployed to fly io link: 
+deployed to fly io link: https://helpjuice-task.fly.dev/ 
 
 ## Reset 
 * `rails db:drop db:create db:migrate db:seed`
