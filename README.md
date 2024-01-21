@@ -1,24 +1,45 @@
-# README
+## README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Project info
 
-Things you may want to cover:
 
-* Ruby version
+Developer: Jemimah Chepyego
 
-* System dependencies
 
-* Configuration
+GitHub: https://github.com/chepyego/Helpjuice-task
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+### Dependencies
+* ruby 3.1.3
+* rails 7.0.6
+* postgresql
+* tailwind 
 
-* Services (job queues, cache servers, search engines, etc.)
+### Installation
 
-* Deployment instructions
+* Create a clone of this  of this repository  (`git clone`)
 
-* ...
+* Duplicate `config/database.yml.example` and rename it to `config/database.yml`
+
+* Execute `bundle install` to install all gems required, setup database and check other dependencies
+
+* Run `rails db:create` to create the database.
+
+* Local server: `./bin/dev` - this will ensure to load all the assets
+
+## Deployments
+
+### Production
+
+deployed to fly io link: 
+
+## Reset 
+* `rails db:drop db:create db:migrate db:seed`
+
+## Run tests
+* rspec spec/folder/your_system_spec.rb
+
+Run all  Rspec tests file in a directory
+
+:tada:
