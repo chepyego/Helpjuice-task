@@ -1,9 +1,19 @@
 <h1 class="text-center text-2xl mb-4">all articles </h1>
-    <% if @article.nil? %>
 
-     <p><%= notice:"sorry article not found" %></p>
+  <% if @articles.any? %>
+      <%= render @articles %>
+      <% else %>
+      <p class="text-xl color-red-700"><%= "Sorry, article not found" %></p>
 
-    <% else %>
+    <% end %>
+
     
-     <%= render @articles %>
-  <% end %>
+
+  <div data-controller="search" data-content-loader-url-value="/search">
+     <h2 class="text-center mt-8 text-2xl my-auto"> what other people are searching <h2>
+     <ul>
+       <li></li>
+     
+     <ul>
+  
+  </div>
