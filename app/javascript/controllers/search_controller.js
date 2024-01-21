@@ -4,8 +4,9 @@ export default class extends Controller {
     static targets = ["name"]
     static values = { url: String }
 
-  connect() {
+  loadData() {
     this.display
+    console.log('hey jem')
   }
 
   display(){

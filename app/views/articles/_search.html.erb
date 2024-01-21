@@ -4,7 +4,7 @@
         <%= form.label :query, "Search for:" %>
         <%= form.text_field :query, data:{ target: "input"} %>
         
-        <%= form.submit "Search", class:"bg-blue-500 px-3 py-2", data:{ action: "click->search#display"} %>
+        <%= form.submit "Search", class:"bg-blue-500 px-3 py-2", data:{ action: "click->search#loadData"} %>
     <% end %>
 
 
