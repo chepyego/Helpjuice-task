@@ -1,10 +1,10 @@
 
-<div  data-controller="search"class="flex justify-center mt-10 mb-20">
-    <%=form_with url: "/search", method: :get do |form| %>
+<div  data-controller="search" data-action="keyup->search#loadData"class="flex justify-center mt-10 mb-20">
+    <%=form_with url: "https://helpjuice-task.fly.dev/search", method: :get do |form| %>
         <%= form.label :query, "Search for:" %>
         <%= form.text_field :query, data:{ target: "input"} %>
         
-        <%= form.submit "Search", class:"bg-blue-500 px-3 py-2", data:{ action: "click->search#loadData"} %>
+        <%= form.submit "Search", class:"bg-blue-500 px-3 py-2" %>
     <% end %>
 
 
