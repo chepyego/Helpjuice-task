@@ -1,9 +1,21 @@
-<div class=" bg-gray-100  w-screen h-screen">
+<div class=" bg-gray-200  w-screen h-screen">
   <div class=" image-anime mt-4 flex  justify-between mx-20  py-8">
     <h1 class=" tracking-wide  my-10  text-6xl font-bold"> Find your Dream <br><span class=" text-yellow-600 text-6xl ">CAR</span><span><button class="ml-4 text-sm text-white bg-yellow-600 px-6 py-3 rounded-full">View Our stock</button>
     </span></h1>
 
 
    </div> 
+   <div class=" bg-white  py-20   my-4">
+    <%= form_with url: "/search",class:" bg-gray-700 border-solid border-slate-100 rounded-full h-36  w-1/2 mx-auto", method: :get do |form| %>
+    <%= form.label :query, "Search for:" %>
+    <div class="flex justify-center  justify-items-center relative">
+        <%= form.text_field :query, class:" " %>
+        <%= form.submit "Search", class:"absolute  right-10" %>
+    </div>
+    <% end %>
+  
+
+    
+   </div>
   
 </div>
