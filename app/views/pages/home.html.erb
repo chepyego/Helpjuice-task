@@ -19,17 +19,39 @@
 
     
    </div>
-   <div class="my-4 ">
-     <h1 class="text-center pb-20 mb-4 text-2xl text-gray-700">Brands</h1>
+    <div class="my-4 ">
+      <h1 class="text-center pb-20 mb-4 text-2xl text-gray-700">Brands</h1>
 
-    <div class="brands flex pb-20 justify-center gap-8">
-      <%  @image_paths.each do | image_path| %>
-        <%= image_tag("logos1/#{image_path.split('/').last}", class:"w-32 h-32") %>
+      <div class="brands flex pb-40 justify-center gap-8">
+        <%  @image_paths.each do | image_path| %>
+          <%= image_tag("logos1/#{image_path.split('/').last}", class:"w-32 h-32") %>
+          
+        <% end %>
+
+      
+      </div>
+    </div> 
+    <div class=" my-4">
+     <h1 class="text-center  mb-4 text-2xl text-gray-700">Explore</h1>
+     <div class="">
+       <ul class="flex pt-10 text-lg text-gray-500 justify-center gap-x-8">
+         <li>Cars</li>
+         <li>Trucks</li>
+         <li>CrossOvers and Suvs</li>
+         <li>Saloon</li>
+
+
+       </ul>
+     
+     </div>
+       
+     <div class=" my-4">
+       <div class=" w-96 h-48 rounded-lg">
         
-      <% end %>
-
-    
+       
+       </div>
+     
+     </div>
     </div>
-  </div> 
   
 </div>
