@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-  def Home
-    @images_path = Dir.glob("#{Rails.root}/app/assets/images/logos/*.png")
+  def home
+    @image_paths = Dir.glob("#{Rails.root}/app/assets/images/logos1/*.png")
 
   end
 end
