@@ -1,17 +1,38 @@
-    <ul class=" flex">
+    <ul class=" md:flex hidden">
        <div class="flex  gap-10 justify-start ">
-          <li>HOME</li>
-          <li>NEW MODELS</li>
-          <li>ABOUT US </li>
+          <li class=" hover:underline decoration-yellow-600" >HOME</li>
+          <li class="hover:underline decoration-yellow-600">NEW MODELS</li>
+          <li class="hover:underline decoration-yellow-600">ABOUT US </li>
         </div>
-        <li class="flex justify-center mx-auto">ZURICH MOTORS</li>
+        <li class="flex justify-center mx-auto hover:underline decoration-yellow-600"><span class="font-bold text-2xl mr-2">ZURICH</span> <span class="text-yellow-600 mt-2 font-bold">MOTORS</span></li>
 
-        <div class="flex  gap-10 justify-end">
-          <li>NEWS</li>
-          <li>CONTACT</li>
-          <li>CONTACT SELLER</li>
+        <div class="  flex  gap-10 justify-end">
+          <li class="hover:underline decoration-yellow-600">NEWS</li>
+          <li class="hover:underline decoration-yellow-600">CONTACT</li>
+          <li class="hover:underline decoration-yellow-600">CONTACT SELLER</li>
         </div>
-        
-
     </ul>
+    <%# mobile navigation %>
+
+
+
+    <div data-controller="navbar" class=" flex flex-col pl-6 md:hidden mx-auto gap-y-20  bg-gray-300 py-10">
+      <svg  data-action="click->navbar#toggle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+      </svg>
+
+
+        <ul data-navbar-target="menu">
+          <li class=" mx-auto hover:underline decoration-yellow-600"><span class="font-bold text-xl ">ZURICH</span> <span class="text-yellow-600 mt-2 font-bold text-sm">MOTORS</span></li>
+
+          <li class=" hover:underline decoration-yellow-600" >HOME</li>
+          <li class="hover:underline decoration-yellow-600">NEW MODELS</li>
+          <li class="hover:underline decoration-yellow-600">ABOUT US </li>
+
+          <li class="hover:underline decoration-yellow-600">NEWS</li>
+          <li class="hover:underline decoration-yellow-600">CONTACT</li>
+          <li class="hover:underline decoration-yellow-600">CONTACT SELLER</li>
+        </ul>
+
+    </div>
 
