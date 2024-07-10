@@ -1,6 +1,6 @@
 <div class=" mx-auto container    w-full h-full">
-  <div class=" image-anime mt-4 flex  justify-between mx-20  py-8">
-    <h1 class=" tracking-wide  my-10  text-6xl font-bold"> Find your Dream <br><span class=" text-yellow-600 text-6xl ">CAR</span><span><button class="ml-4 text-sm text-white bg-yellow-600 px-6 py-3 rounded-full">View Our stock</button>
+  <div class=" image-anime mt-4 md:flex  justify-between md:mx-20 py-6  py-8">
+    <h1 class=" tracking-wide  md:my-10 my-2  md:text-6xl text-2xl font-bold"> Find your Dream <br><span class=" text-yellow-600 md:text-6xl text-3xl ">CAR</span><span><button class="ml-4 md:text-sm text-xs text-white bg-yellow-600 px-3 md:px-6 md:py-3 py-2  rounded-full">View Our stock</button>
     </span></h1>
 
 
@@ -19,12 +19,12 @@
 
     
    </div>
-    <div class="my-4 ">
-      <h1 class="text-center pb-20 mb-4 text-2xl text-gray-700">Brands</h1>
+    <div class="my-4  ">
+      <h1 class=" flex justify-center md:pb-20 pd:20 mb-4 text-2xl text-gray-700">Brands</h1>
 
-      <div class="brands flex pb-40 justify-center gap-8">
+      <div class="brands  md:flex grid grid-cols-3  gap-1   pb-40 justify-center md:gap-8">
         <%  @image_paths.each do | image_path| %>
-          <%= image_tag("logos1/#{image_path.split('/').last}", class:"w-32 h-32") %>
+          <%= image_tag("logos1/#{image_path.split('/').last}", class:"md:w-32 md:h-32 w-14 h-14") %>
           
         <% end %>
 
@@ -32,9 +32,9 @@
       </div>
     </div> 
     <div class=" my-4 bg-gray-200 pb-20 ">
-      <h1 class="text-center pt-10 mb-4 text-2xl text-gray-700">Explore</h1>
+      <h1 class="text-center pt-10 mb-4 md:text-2xl text-xl text-gray-700">Explore</h1>
       <div class="">
-        <ul class="flex pt-10 text-lg text-gray-500 justify-center gap-x-8">
+        <ul class="flex md:pt-10 pt-6 text-lg text-gray-500 justify-center md:gap-x-8 gap-x-4">
           <li>Cars</li>
           <li>Trucks</li>
           <li>CrossOvers and Suvs</li>
@@ -45,17 +45,17 @@
       
       </div>
        
-     <div class=" pl-20 flex   flex-wrap gap-x-96  gap-y-10 justify-center      pt-20  ">
+     <div class=" md:pl-20 md:flex grid grid-cols-1 mx-auto gap-8  flex-wrap md:gap-x-96  md:gap-y-10 justify-center      pt-20  ">
         <div class="relative">
-            <div class="absolute right-56  top-20 mt-4  w-80 h-48 ">
-              <%= image_tag 'banner2.png', class:"w-full h-full rounded-lg" %>
+            <div class="absolute right-56  top-20 mt-4  md:w-80 md:h-48 ">
+              <%= image_tag 'banner2.png', class:"md:w-full w-fit md:h-full h-fit rounded-lg" %>
             </div>
-              <div class="  text-gray-700  pl-16 px-8  flex  gap-y-4 flex-col justify-center   h-80 w-full max-w-fit bg-white rounded-lg">
-                <p class="  text-xl font-semibold ">Toyota</p>
+              <div class="  text-gray-700  md:pl-16 md:px-8  flex  gap-y-4 flex-col justify-between   md:h-80  w-full max-w-fit bg-white rounded-lg">
+                <p class="  md:text-xl text-sm font-semibold ">Toyota</p>
                 <p class"text-lg">Foreign used</p>
-                <p class=" text-lg">Model Year <span class="ml-8">2015</span></p>
-                <p class="text-lg">Model  <span class="ml-8">Mazda</span></p>
-                <p class="text-lg">Fuel <span class="ml-8">Petrol</span></p>
+                <p class=" md:text-lg text-sm">Model Year <span class="md:ml-8">2015</span></p>
+                <p class="text-lg">Model  <span class="md:ml-8">Mazda</span></p>
+                <p class="text-lg">Fuel <span class="md:ml-8">Petrol</span></p>
                 <button class="bg-yellow-600 py-3 px-7 mt-2 text-sm hover:bg-yellow-300 rounded-full">Chat on whatsaap</button>
 
               </div>
@@ -108,7 +108,7 @@
           <h1 class="text-center text-red pt-10 mb-4 text-2xl text-gray-700">Our services</h1>
           <p class="text-gray-500 mb-2">We offer various services </p>
         </div>
-      <div class="flex  pt-10 gap-x-20 justify-center">    
+      <div class="md:flex grid grid-cols-1 gap-4 pt-10 md:gap-x-20 justify-center">    
         <div class=" p-6 rounded-md w-60 h-52 bg-gray-200">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="stroke-red-200 mt-2 w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />

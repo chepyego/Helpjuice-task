@@ -30,6 +30,8 @@
 .image-anime{
     height: 100%;
     width: 100%;
+    background-repeat: no-repeat;
+
     background-size: contain;
     animation: changeImage 8s infinite;
 }
@@ -44,3 +46,16 @@ body{
     padding: 0;
     margin: 0;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .image-anime{
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+  }
