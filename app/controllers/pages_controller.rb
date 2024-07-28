@@ -6,4 +6,14 @@ class PagesController < ApplicationController
 
     @happy_clients = Dir.glob("#{Rails.root}/app/assets/images/happy/*.jpg")
   end
+
+  def about
+
+  end
+  def contact
+   end
+
+   def new_models
+
+   end
 end
