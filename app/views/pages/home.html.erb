@@ -166,25 +166,26 @@
   <div class="bg-gray-100  mx-auto my-4 py-10">
 
     <h1 class="text-center text-red pb-10 pt-10 mb-4 text-2xl text-gray-700">Happy clients from Zurich motors</h1>
-    <div>
-      <div class=" pt-10 pb-10  w-64 h-60 flex  gap-8">
-        <%  @happy_clients.each do | happy_path| %>
-          <%= image_tag("happy/#{happy_path.split('/').last}", class:"w-full h-full") %>
-          
+    <div  class=""data-controller="carousel" >
+        <div data-action="click->carousel#previous" class="cursor-pointer">Previous</div>
+        <div data-action="click->carousel#next" class="cursor-pointer">Next</div>
+        <div data-carousel-index-value="1" class="text-center mt-2 mb-4"></div>
+
+      
+      <div  class="   rounded-md w-96 h-full">
+        <%  @happy_clients.each do | happy_path, index| %>
+          <div  data-carousel-target="slide" class=" <%=  %>">
+            <%= image_tag("happy/#{happy_path.split('/').last}",  class:"   w-full h-full") %>
+          </div>
         <% end %>
 
     </div>
-
-  </div>
+    
   <div class="bg-gray-200 py-20">
       <h1 class="text-center text-red pb-10 pt-10 mb-4 text-2xl text-gray-700">Blogs</h1>
       <div class="text-center text-red-500 font-medium text-4xl"><%= render plain: "coming soon don't get tired!" %></div>
 
 
   </div>
-  <div data-controller="hello" class=" justify-center flex learning stimulus js">
-    <input data-hello-target="name"type="text">
-     <button data-action="click->hello#greet">Great!</button>
-
-  </div>
+  
 </div>

@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 .back-pic{
     background-image: url('/assets/banner2.png');
     background-size: contain;
@@ -62,3 +63,4 @@ body{
     }
     
   }
+
